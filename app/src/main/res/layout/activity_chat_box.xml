@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.androidchat.Activity.ChatBoxActivity">
+
+    <LinearLayout
+        android:layout_width="403dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="364dp"
+            android:layout_height="58dp"
+            android:layout_above="@+id/nickname"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+
+            android:tooltipText="choose a user" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/messagelist"
+            android:layout_width="match_parent"
+            android:layout_height="567dp"
+
+            android:layout_gravity="right"
+            android:layout_weight="3"
+            android:clipToPadding="false"
+            android:scrollbars="none"
+            tools:listitem="@layout/item_message_received" />
+        <View
+            android:id="@+id/separator1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginBottom="25dp"
+            android:weightSum="4">
+
+            <EditText
+
+                android:id="@+id/message"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_weight="3"
+                android:hint="your message"
+
+                android:paddingLeft="5dp" />
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_send"
+                android:layout_marginBottom="5dp"
+android:layout_gravity="left"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
