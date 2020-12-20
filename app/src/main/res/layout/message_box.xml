@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/space10"
+    android:paddingRight="@dimen/space5"
+    android:paddingTop="@dimen/space5"
+    android:paddingBottom="@dimen/space5"
+    android:background="#77E9EDED"
+    android:layout_alignParentBottom="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="left"
+        android:layout_marginLeft="50dp"
+        android:layout_weight="3"
+        android:hint="your message"
+        android:layout_marginStart="35dp"
+
+        android:paddingStart="1dp"
+        android:paddingLeft="5dp"
+        android:stateListAnimator="@null" />
+
+    <Button
+        android:id="@+id/mic"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/message"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="left"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="370dp"
+        android:layout_marginRight="375dp"
+        android:layout_toLeftOf="@+id/message"
+        android:background="@drawable/ic_iconmonstr_microphone_14"
+        android:gravity="center"
+        android:paddingStart="5dp" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="26dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/message"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/message"
+        android:background="@drawable/ic_send"
+        android:gravity="center"
+        android:paddingStart="5dp" />
+
+</RelativeLayout>
